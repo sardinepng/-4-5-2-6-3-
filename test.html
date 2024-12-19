@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabric.js Real SVG Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/fabric@latest/dist/index.min.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    #thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+    #thumbnails svg {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: border 0.3s;
+      border: 1px solid gray;
+    }
+    #thumbnails svg:hover {
+      border: 1px solid black;
+    }
+    canvas {
+      border: 1px solid gray;
+      display: block;
+    }
+    button {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>(4)(5)(2)(6)(3)</h1>
+  <p>Le texte&thinsp;?</p>
+  <div id="thumbnails">
+    <svg id="svg_1" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 152.07 256.95">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="152.07" height="256.95"/>
+        </clipPath>
+      </defs>
+      <g class="cls-4">
+        <path class="cls-2" d="M.28,146.25l151.5,110.32M41.63,134.07c-1.84,1.27-2.34,2.37-2.46,3.12-.53,3.28,4.93,6.94,13.66,9.4M46.59,128.62c-1.91,1.29-2.38,2.48-2.47,3.3-.4,3.6,5.66,8,15.14,11.27M38.33,146.11l39.1,25.27M54.25,147.28l74.57,37.9M63.67,141.64l79.77,25.46M64.61,120.47l16.83-.5M57.59,1.48l14.03-1"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M52.04,123.6c-.84,1.13-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.67h-.79c-.72-.95-1.51-2.42-1.51-4.67.01-2.26.78-3.73,1.51-4.7h.79Z"/>
+        <path class="cls-3" d="M54.98,125.05h-.02l-1.3.7-.2-.77,1.63-.87h.86v7.47h-.98v-6.53Z"/>
+      </g>
+      <path class="cls-3" d="M58.39,132.96c.82-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.66h.78c.74.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+    </svg>
+
+    <svg id="svg_2" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.39 220.22">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="128.39" height="220.22"/>
+        </clipPath>
+      </defs>
+      <g class="cls-4">
+        <path class="cls-2" d="M.5,72.96v51.88M64.42,197.52h10.77M39.88,164.1v56.13M111.1,154.78l-1.2,43.06M10.72,4.29l-1.2,61.7M18.66,122.97v19.6M47.06,119.87v19.6M46.46.01l1.2,52.06M98.26,145.04l12.14,6.74M109.17,143.6l7.61,5.08M99.09,91.91l.62,30.93M127.27,89.48l.62,31.59"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M24.61,205.21c-.88,1.17-1.51,2.73-1.51,4.91s.66,3.67,1.51,4.87h-.83c-.76-1-1.57-2.53-1.57-4.87.01-2.36.82-3.9,1.57-4.91h.83Z"/>
+        <path class="cls-3" d="M25.39,213.54v-.65l.83-.8c1.99-1.89,2.89-2.9,2.9-4.08,0-.79-.38-1.52-1.55-1.52-.71,0-1.3.36-1.66.66l-.34-.74c.54-.46,1.31-.79,2.21-.79,1.68,0,2.39,1.15,2.39,2.27,0,1.44-1.04,2.6-2.69,4.19l-.62.58v.02h3.5v.88h-4.98Z"/>
+      </g>
+      <path class="cls-3" d="M31.25,214.99c.85-1.19,1.51-2.75,1.51-4.91s-.65-3.68-1.51-4.87h.82c.77.98,1.57,2.52,1.57,4.88s-.8,3.87-1.57,4.89h-.82Z"/>
+    </svg>
+
+    <svg id="svg_3" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 557.71 142.56">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath-1);
+          }
+    
+          .cls-5 {
+            clip-path: url(#clippath-2);
+          }
+    
+          .cls-6 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="557.71" height="142.56"/>
+        </clipPath>
+        <clipPath id="clippath-1">
+          <rect class="cls-1" width="557.71" height="142.56"/>
+        </clipPath>
+        <clipPath id="clippath-2">
+          <rect class="cls-1" width="557.71" height="142.56"/>
+        </clipPath>
+      </defs>
+      <g class="cls-6">
+        <g>
+          <path class="cls-3" d="M2.3,0C1.46,1.12.85,2.61.85,4.69s.63,3.52,1.45,4.67h-.79C.78,8.41,0,6.94,0,4.69.01,2.43.78.96,1.51,0h.79Z"/>
+          <path class="cls-3" d="M3.28,6.81c.29.18.95.47,1.66.47,1.3,0,1.7-.83,1.69-1.45-.01-1.05-.95-1.49-1.93-1.49h-.56v-.76h.56c.74,0,1.67-.38,1.67-1.26,0-.6-.38-1.13-1.31-1.13-.6,0-1.17.26-1.49.49l-.26-.74c.39-.29,1.15-.57,1.95-.57,1.47,0,2.14.87,2.14,1.78,0,.77-.46,1.42-1.38,1.76v.02c.92.18,1.67.87,1.67,1.92,0,1.2-.93,2.24-2.72,2.24-.84,0-1.57-.26-1.94-.5l.28-.78Z"/>
+        </g>
+        <path class="cls-3" d="M8.65,9.36c.82-1.14,1.45-2.63,1.45-4.7S9.48,1.13,8.65,0h.78c.74.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+      </g>
+      <line class="cls-2" x1="54.16" y1="56.54" x2="23.74" y2="127"/>
+      <line class="cls-2" x1="90.82" y1="60.79" x2="60.4" y2="131.24"/>
+      <line class="cls-2" x1="127.31" y1="60.79" x2="96.89" y2="131.24"/>
+      <line class="cls-2" x1="164.22" y1="62.91" x2="133.8" y2="133.37"/>
+      <line class="cls-2" x1="200.87" y1="67.16" x2="170.45" y2="137.62"/>
+      <line class="cls-2" x1="237.37" y1="67.16" x2="206.95" y2="137.62"/>
+      <line class="cls-2" x1="273.11" y1="67.66" x2="242.69" y2="138.12"/>
+      <g class="cls-4">
+        <line class="cls-2" x1="309.77" y1="71.91" x2="279.35" y2="142.37"/>
+        <line class="cls-2" x1="346.26" y1="71.91" x2="315.84" y2="142.37"/>
+      </g>
+      <line class="cls-2" x1="265.18" y1="47.22" x2="234.76" y2="117.68"/>
+      <line class="cls-2" x1="301.84" y1="51.47" x2="271.42" y2="121.92"/>
+      <line class="cls-2" x1="338.33" y1="51.47" x2="307.91" y2="121.92"/>
+      <line class="cls-2" x1="375.23" y1="53.59" x2="344.81" y2="124.05"/>
+      <line class="cls-2" x1="411.89" y1="57.84" x2="381.47" y2="128.29"/>
+      <line class="cls-2" x1="448.38" y1="57.84" x2="417.96" y2="128.29"/>
+      <line class="cls-2" x1="484.12" y1="58.34" x2="453.7" y2="128.8"/>
+      <line class="cls-2" x1="520.78" y1="62.59" x2="490.36" y2="133.05"/>
+      <g class="cls-5">
+        <line class="cls-2" x1="557.27" y1="62.59" x2="526.85" y2="133.05"/>
+      </g>
+      <path class="cls-2" d="M417.24,4.91l-.26,7.68M409.04,4.21v8.38M402.15,4.91v7.68M393.83,5.33l-.26,9.21M385.64,5.33l-.13,9.07M376.79,6.31v8.94M365.75,6.31v8.94"/>
+    </svg>
+
+    <svg id="svg_4" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 114.39 57.65">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath-1);
+          }
+    
+          .cls-5 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="114.39" height="57.65"/>
+        </clipPath>
+        <clipPath id="clippath-1">
+          <rect class="cls-1" width="114.39" height="57.65"/>
+        </clipPath>
+      </defs>
+      <g class="cls-5">
+        <path class="cls-2" d="M33.74,55.48l50.6.95M1.05,57.17l29.93-1.48M38.07,14.89l46.27,7.19M.85,21.65l33.87-4.38M.03,10.45l83.32,1.69M39.84.48h15.95M.03,1.57l27.01,1.69M98.25,36.43l10.79,5.03M84.87,34.54l11.54.99M16.01,48.37l13.21-1.25M36.42,21.59l41.91,4.82M15.51,29.08l13.01-2.5M15.04,38.99l14.56-1.93M35.88,47.38l41.99,1.08M38.05,42.3l37.57,2M35.65,36.23l43.54,3.16M34.33,25.83l44.77,4.74M37.28,31.74l39.58,3.41"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M105.76,26.48c-.84,1.12-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.66h-.79c-.72-.95-1.51-2.42-1.51-4.66.01-2.26.78-3.73,1.51-4.7h.79Z"/>
+        <path class="cls-3" d="M109.63,34.46v-2.03h-3.47v-.67l3.33-4.77h1.09v4.64h1.05v.79h-1.05v2.03h-.95ZM109.63,31.63v-2.49c0-.39.01-.78.04-1.17h-.04c-.23.44-.41.76-.62,1.1l-1.83,2.54v.02h2.45Z"/>
+      </g>
+      <g class="cls-4">
+        <path class="cls-3" d="M112.11,35.85c.82-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.66h.78c.74.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+      </g>
+    </svg>
+
+    <svg id="svg_5" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 194.81 28.1">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="194.81" height="28.1"/>
+        </clipPath>
+      </defs>
+      <g class="cls-4">
+        <path class="cls-2" d="M.23,17.31l11.62,6.45M49.46,14.67l7.58,3.81M39.22,14.25l9.84,6.13M29.37,14.03l12.8,7.4M20.51,15.73l9.84,5.5M10.67,15.94l7.28,4.86M79.78.7l-.26,7.68M71.58,0v8.38M64.69.7v7.68M56.37,1.12l-.26,9.22M48.18,1.12l-.13,9.08M39.33,2.09v8.94M28.29,2.09v8.94M170.54,14.11v6.84M166.89,14.11v6.84M121.45,16.33l42.93-2.86M109.13,11.49l85.65-5.28"/>
+        <g>
+          <path class="cls-3" d="M111.32,18.74c-.84,1.13-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.67h-.79c-.72-.95-1.51-2.42-1.51-4.67.01-2.26.78-3.73,1.51-4.7h.79Z"/>
+          <path class="cls-3" d="M116.52,20.1h-2.85l-.29,1.92c.17-.02.33-.05.61-.05.57,0,1.15.13,1.61.4.59.33,1.07.98,1.07,1.92,0,1.46-1.16,2.55-2.78,2.55-.82,0-1.5-.23-1.86-.46l.25-.77c.31.18.92.41,1.6.41.95,0,1.77-.62,1.77-1.62-.01-.96-.66-1.65-2.15-1.65-.42,0-.76.05-1.03.08l.48-3.58h3.57v.85Z"/>
+        </g>
+        <path class="cls-3" d="M117.66,28.11c.82-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.66h.78c.74.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+      </g>
+    </svg>
+
+    <svg id="svg_6" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 245.57 112.68">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="245.57" height="112.68"/>
+        </clipPath>
+      </defs>
+      <g class="cls-4">
+        <path class="cls-2" d="M201.71,71.86h21.45M223.16,43.55h17.4M201.24,45.76l16.21-4.42M235.56,68.54h10.01M230.31,84.66l-.95-16.12M11.59,67.92l29.78-8.61M84.9,70.38l99.66-14.76M52.25,75.92l17.18-3.08M8.72,80.53l16.04-2.77M133.02,40.24l25.2-5.54M70.58,54.39l28.64-4.92M6.43,112.2l238.85-22.76M.13,48.85L125,13.18"/>
+        <g>
+          <path class="cls-3" d="M117.26,0c-.84,1.13-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.67h-.79c-.72-.95-1.51-2.42-1.51-4.67.01-2.26.78-3.73,1.51-4.7h.79Z"/>
+          <path class="cls-3" d="M122.27,1.21c-.21-.01-.47,0-.76.05-1.58.26-2.42,1.42-2.6,2.65h.03c.36-.47.98-.86,1.8-.86,1.32,0,2.25.95,2.25,2.41,0,1.37-.93,2.63-2.48,2.63s-2.64-1.24-2.64-3.18c0-1.47.53-2.63,1.26-3.37.62-.61,1.45-.99,2.39-1.1.3-.05.55-.06.74-.06v.83ZM121.98,5.52c0-1.07-.61-1.71-1.54-1.71-.61,0-1.17.38-1.45.92-.07.12-.12.26-.12.45.02,1.23.59,2.14,1.64,2.14.87,0,1.46-.72,1.46-1.79Z"/>
+        </g>
+        <path class="cls-3" d="M123.61,9.36c.82-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.67h.78c.74.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+      </g>
+    </svg>
+
+    <svg id="svg_7" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.08 37.31">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" width="511.08" height="37.31"/>
+        </clipPath>
+      </defs>
+      <g class="cls-4">
+        <g>
+          <path class="cls-3" d="M502.45,27.94c-.84,1.13-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.67h-.79c-.72-.95-1.5-2.42-1.5-4.67.01-2.26.78-3.73,1.5-4.7h.79Z"/>
+          <path class="cls-3" d="M508.04,28.45v.67l-3.25,6.8h-1.05l3.24-6.61v-.02h-3.65v-.84h4.71Z"/>
+        </g>
+        <path class="cls-3" d="M508.79,37.31c.82-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.66h.78c.74.94,1.51,2.41,1.51,4.68s-.77,3.71-1.51,4.69h-.78Z"/>
+        <path class="cls-2" d="M51.96,12.16l-.26,7.68M43.77,11.46v8.38M36.88,12.16v7.68M28.56,12.57l-.26,9.22M20.37,12.57l-.13,9.08M11.52,13.55v8.94M.48,13.55v8.94M68.71.48l339.66,12.3"/>
+      </g>
+    </svg>
+
+    <svg id="svg_8" class="thumbnail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 145.19 263.66">
+      <defs>
+        <style>
+          .cls-1, .cls-2 {
+            fill: none;
+          }
+    
+          .cls-2 {
+            stroke: #1d1d1b;
+            stroke-miterlimit: 10;
+            stroke-width: .96px;
+          }
+    
+          .cls-3 {
+            fill: #1d1d1b;
+          }
+    
+          .cls-4 {
+            clip-path: url(#clippath-1);
+          }
+    
+          .cls-5 {
+            clip-path: url(#clippath);
+          }
+        </style>
+        <clipPath id="clippath">
+          <rect class="cls-1" y="0" width="145.19" height="263.65"/>
+        </clipPath>
+        <clipPath id="clippath-1">
+          <rect class="cls-1" y="0" width="145.19" height="263.65"/>
+        </clipPath>
+      </defs>
+      <g class="cls-5">
+        <path class="cls-2" d="M46,75.95l4.68,82.34M27.53,174.35l48.84-18.83M29.17,61.14l7.71,159.15M44.6,64.66l28.52-2.01M31.51,53.61l14.26-1M.18,44.82l27.82,11.3"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M54.09,46.57c-.84,1.13-1.45,2.62-1.45,4.7s.63,3.52,1.45,4.67h-.79c-.72-.95-1.5-2.42-1.5-4.67.01-2.26.78-3.73,1.5-4.7h.79Z"/>
+        <path class="cls-3" d="M54.74,52.64c0-.94.56-1.61,1.48-2v-.03c-.84-.39-1.19-1.03-1.19-1.68,0-1.18,1-1.99,2.31-1.99,1.45,0,2.17.91,2.17,1.84,0,.63-.31,1.31-1.23,1.75v.03c.93.37,1.51,1.02,1.51,1.93,0,1.3-1.12,2.17-2.54,2.17-1.56,0-2.5-.93-2.5-2.02ZM58.77,52.6c0-.91-.63-1.34-1.64-1.63-.87.25-1.34.83-1.34,1.54-.04.76.54,1.42,1.49,1.42s1.49-.56,1.49-1.33ZM55.99,48.86c0,.75.56,1.15,1.42,1.38.64-.22,1.14-.68,1.14-1.36,0-.6-.36-1.22-1.26-1.22-.84,0-1.3.55-1.3,1.2Z"/>
+      </g>
+      <path class="cls-3" d="M60.44,55.93c.81-1.14,1.45-2.63,1.45-4.7s-.62-3.53-1.45-4.66h.78c.73.94,1.5,2.41,1.5,4.68s-.77,3.71-1.5,4.69h-.78Z"/>
+      <g class="cls-4">
+        <path class="cls-2" d="M111.81,63.65l3.13,200M144.71,53.11v152.61M109.07,47.65l33.29-2.82M108.68,10.7l.78,25.07M86.8,169.72l12.35-4.78M86.8,113.32l18.58-6.82M86.8,50.47l12.35-5.65M74.44,7.52L99.15.46M76.94,13.83l2.07,185.33"/>
+      </g>
+    </svg>
+
+  </div>
+
+  <canvas id="canvas" width="900" height="637"></canvas>
+
+  <button id="export-button">Exporter l’image</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
